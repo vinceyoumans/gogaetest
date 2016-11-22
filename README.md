@@ -20,52 +20,25 @@ version
 encoding
 feed
 
-Feed has a slice of type struct.
-1st, as I am new to goLang, could someone correct my vocabulary description of the above please.
-2nd... I am sure I am doing this wrong.
-type Entry struct {
-    ID string `json:"id"`
-}
+The feed has a struct of Entry which is an array ( or slice) of another struct.
+This code is able to pick out the individual parts of Entry
 
-please see sampentry.json  or goto 
-https://spreadsheets.google.com/feeds/list/1brWkVApKRJ3aRL6OfIQ4jlyx-wXmDhfpGjHIK6ACdQE/1/public/values?alt=json
+Need to add this to a db now.  
 
+Also, the first row is ignored as I think it is suppose to be a Label row
+But I cannot find the JSON part that descibed the rows.
+If anyone has a comment on that.
 
-In this sample code, I can extract everything right up to the part where i have to extract the entry.
-I get this error:
-2016/11/22 14:44:08 json: cannot unmarshal array into Go value of type main.Entry
-exit status 1
-
-I believe it is because I am trying to import a slice into a single json array. 
-Again forgive the way I am explaining it.  I think there is a specific term for this.
-
-could someone look at the code, and give me a hint on how I can import a slice of structs into my system please.
+Also...
+There are structs within structs to get to the data.
+isn't it possible to chop that down a bit?
 
 
-the return is:
- {  
-     1.0 
-     {http://www.w3.org/2005/Atom 
-        {text Sheet1} 
-            [       {
-                        {text ATest} 
-                            {text colb: 12:02 PM, colc: 12:23 PM, cold: 2:43 AM} 
-                            {ATest} {12:02 PM} {12:23 PM} {2:43 AM}} 
-                        
-                        {{text BTest} {text colb: 1:02 PM, colc: 1:23 PM, cold: 3:43 AM} {BTest} {1:02 PM} {1:23 PM} {3:43 AM}} {{text CTest} {text colb: 2:02 PM, colc: 2:23 PM, cold: 4:43 AM} {CTest} {2:02 PM} {2:23 PM} {4:43 AM}}]}}
+Next step...
+I need to determin the rows that are in entry's and print them out individually.
 
 
-                        2016/11/22 16:52:41 
-                        [   {   
-                                {text ATest} 
-                                {text colb: 12:02 PM, colc: 12:23 PM, cold: 2:43 AM} 
-                            {ATest} {12:02 PM} {12:23 PM} {2:43 AM}} 
-                            {
-                                {text BTest} 
-                                {text colb: 1:02 PM, colc: 1:23 PM, cold: 3:43 AM} 
-                                {BTest} {1:02 PM} {1:23 PM} {3:43 AM}} 
-                            {   
-                                {text CTest} 
-                                {text colb: 2:02 PM, colc: 2:23 PM, cold: 4:43 AM} 
-                                {CTest} {2:02 PM} {2:23 PM} {4:43 AM}}
-                        ]
+
+
+
+
