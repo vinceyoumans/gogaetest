@@ -1,0 +1,188 @@
+{
+"version": "1.0",
+"encoding": "UTF-8",
+"feed": {
+"xmlns": "http://www.w3.org/2005/Atom",
+"xmlns$openSearch": "http://a9.com/-/spec/opensearchrss/1.0/",
+"xmlns$gsx": "http://schemas.google.com/spreadsheets/2006/extended",
+"id": {
+"$t": "https://spreadsheets.google.com/feeds/list/1brWkVApKRJ3aRL6OfIQ4jlyx-wXmDhfpGjHIK6ACdQE/1/public/values"
+},
+"updated": {
+"$t": "2016-11-22T19:27:16.038Z"
+},
+"category": [
+{
+"scheme": "http://schemas.google.com/spreadsheets/2006",
+"term": "http://schemas.google.com/spreadsheets/2006#list"
+}
+],
+"title": {
+"type": "text",
+"$t": "Sheet1"
+},
+"link": [
+{
+"rel": "alternate",
+"type": "application/atom+xml",
+"href": "https://docs.google.com/spreadsheets/d/1brWkVApKRJ3aRL6OfIQ4jlyx-wXmDhfpGjHIK6ACdQE/pubhtml"
+},
+{
+"rel": "http://schemas.google.com/g/2005#feed",
+"type": "application/atom+xml",
+"href": "https://spreadsheets.google.com/feeds/list/1brWkVApKRJ3aRL6OfIQ4jlyx-wXmDhfpGjHIK6ACdQE/1/public/values"
+},
+{
+"rel": "http://schemas.google.com/g/2005#post",
+"type": "application/atom+xml",
+"href": "https://spreadsheets.google.com/feeds/list/1brWkVApKRJ3aRL6OfIQ4jlyx-wXmDhfpGjHIK6ACdQE/1/public/values"
+},
+{
+"rel": "self",
+"type": "application/atom+xml",
+"href": "https://spreadsheets.google.com/feeds/list/1brWkVApKRJ3aRL6OfIQ4jlyx-wXmDhfpGjHIK6ACdQE/1/public/values?alt=json"
+}
+],
+"author": [
+{
+"name": {
+"$t": "vinceyoumans"
+},
+"email": {
+"$t": "vinceyoumans@gmail.com"
+}
+}
+],
+"openSearch$totalResults": {
+"$t": "3"
+},
+"openSearch$startIndex": {
+"$t": "1"
+},
+"entry": [
+{
+"id": {
+"$t": "https://spreadsheets.google.com/feeds/list/1brWkVApKRJ3aRL6OfIQ4jlyx-wXmDhfpGjHIK6ACdQE/1/public/values/cokwr"
+},
+"updated": {
+"$t": "2016-11-22T19:27:16.038Z"
+},
+"category": [
+{
+"scheme": "http://schemas.google.com/spreadsheets/2006",
+"term": "http://schemas.google.com/spreadsheets/2006#list"
+}
+],
+"title": {
+"type": "text",
+"$t": "ATest"
+},
+"content": {
+"type": "text",
+"$t": "colb: 12:02 PM, colc: 12:23 PM, cold: 2:43 AM"
+},
+"link": [
+{
+"rel": "self",
+"type": "application/atom+xml",
+"href": "https://spreadsheets.google.com/feeds/list/1brWkVApKRJ3aRL6OfIQ4jlyx-wXmDhfpGjHIK6ACdQE/1/public/values/cokwr"
+}
+],
+"gsx$id": {
+"$t": "ATest"
+},
+"gsx$colb": {
+"$t": "12:02 PM"
+},
+"gsx$colc": {
+"$t": "12:23 PM"
+},
+"gsx$cold": {
+"$t": "2:43 AM"
+}
+},
+{
+"id": {
+"$t": "https://spreadsheets.google.com/feeds/list/1brWkVApKRJ3aRL6OfIQ4jlyx-wXmDhfpGjHIK6ACdQE/1/public/values/cpzh4"
+},
+"updated": {
+"$t": "2016-11-22T19:27:16.038Z"
+},
+"category": [
+{
+"scheme": "http://schemas.google.com/spreadsheets/2006",
+"term": "http://schemas.google.com/spreadsheets/2006#list"
+}
+],
+"title": {
+"type": "text",
+"$t": "BTest"
+},
+"content": {
+"type": "text",
+"$t": "colb: 1:02 PM, colc: 1:23 PM, cold: 3:43 AM"
+},
+"link": [
+{
+"rel": "self",
+"type": "application/atom+xml",
+"href": "https://spreadsheets.google.com/feeds/list/1brWkVApKRJ3aRL6OfIQ4jlyx-wXmDhfpGjHIK6ACdQE/1/public/values/cpzh4"
+}
+],
+"gsx$id": {
+"$t": "BTest"
+},
+"gsx$colb": {
+"$t": "1:02 PM"
+},
+"gsx$colc": {
+"$t": "1:23 PM"
+},
+"gsx$cold": {
+"$t": "3:43 AM"
+}
+},
+{
+"id": {
+"$t": "https://spreadsheets.google.com/feeds/list/1brWkVApKRJ3aRL6OfIQ4jlyx-wXmDhfpGjHIK6ACdQE/1/public/values/cre1l"
+},
+"updated": {
+"$t": "2016-11-22T19:27:16.038Z"
+},
+"category": [
+{
+"scheme": "http://schemas.google.com/spreadsheets/2006",
+"term": "http://schemas.google.com/spreadsheets/2006#list"
+}
+],
+"title": {
+"type": "text",
+"$t": "CTest"
+},
+"content": {
+"type": "text",
+"$t": "colb: 2:02 PM, colc: 2:23 PM, cold: 4:43 AM"
+},
+"link": [
+{
+"rel": "self",
+"type": "application/atom+xml",
+"href": "https://spreadsheets.google.com/feeds/list/1brWkVApKRJ3aRL6OfIQ4jlyx-wXmDhfpGjHIK6ACdQE/1/public/values/cre1l"
+}
+],
+"gsx$id": {
+"$t": "CTest"
+},
+"gsx$colb": {
+"$t": "2:02 PM"
+},
+"gsx$colc": {
+"$t": "2:23 PM"
+},
+"gsx$cold": {
+"$t": "4:43 AM"
+}
+}
+]
+}
+}
