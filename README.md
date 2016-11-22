@@ -40,3 +40,32 @@ I believe it is because I am trying to import a slice into a single json array.
 Again forgive the way I am explaining it.  I think there is a specific term for this.
 
 could someone look at the code, and give me a hint on how I can import a slice of structs into my system please.
+
+
+the return is:
+ {  
+     1.0 
+     {http://www.w3.org/2005/Atom 
+        {text Sheet1} 
+            [       {
+                        {text ATest} 
+                            {text colb: 12:02 PM, colc: 12:23 PM, cold: 2:43 AM} 
+                            {ATest} {12:02 PM} {12:23 PM} {2:43 AM}} 
+                        
+                        {{text BTest} {text colb: 1:02 PM, colc: 1:23 PM, cold: 3:43 AM} {BTest} {1:02 PM} {1:23 PM} {3:43 AM}} {{text CTest} {text colb: 2:02 PM, colc: 2:23 PM, cold: 4:43 AM} {CTest} {2:02 PM} {2:23 PM} {4:43 AM}}]}}
+
+
+                        2016/11/22 16:52:41 
+                        [   {   
+                                {text ATest} 
+                                {text colb: 12:02 PM, colc: 12:23 PM, cold: 2:43 AM} 
+                            {ATest} {12:02 PM} {12:23 PM} {2:43 AM}} 
+                            {
+                                {text BTest} 
+                                {text colb: 1:02 PM, colc: 1:23 PM, cold: 3:43 AM} 
+                                {BTest} {1:02 PM} {1:23 PM} {3:43 AM}} 
+                            {   
+                                {text CTest} 
+                                {text colb: 2:02 PM, colc: 2:23 PM, cold: 4:43 AM} 
+                                {CTest} {2:02 PM} {2:23 PM} {4:43 AM}}
+                        ]

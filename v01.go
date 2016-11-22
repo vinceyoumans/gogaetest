@@ -9,21 +9,45 @@ import (
 
 type Link01 struct {
 	Version string `json:"version"`
-	Title   Feed   `json:"Feed"`
+	Feed    Feed   `json:"Feed"`
 }
 type Feed struct {
-	Xmlns string `json:"xmlns"`
-	Title Title  `json:"title"`
-	Entry Entry  `json:"entry"` //!!!!!!!!!!!!!!!!  I believe that this is the error.
+	Xmlns string  `json:"xmlns"`
+	Title T1      `json:"title"`
+	Entry []Entry `json:"entry"` //!!!!!!!!!!!!!!!!  I believe that this is the error.
 }
 
 type Entry struct {
-	Title2 Title2 `json:"title"` // !!! or this is the error.  I'm not sure how to import a slice
+	TitleB  T1       `json:"title"` // !!! or this is the error.  I'm not sure how to import a slice
+	Content ContentB `json:"content"`
+	GSXID   GSXID    `json:"gsx$id"`
+	GSXCOLB GSXCOLB  `json:"gsx$colb"`
+	GSXCOLC GSXCOLC  `json:"gsx$colc"`
+	GSXCOLD GSXCOLD  `json:"gsx$cold"`
 }
 
-type Title2 struct {
-	Title3 string `json:"$t"`
+type GSXID struct {
+	SVal string `json:"$t"`
 }
+
+type GSXCOLB struct {
+	SVal string `json:"$t"`
+}
+type GSXCOLC struct {
+	SVal string `json:"$t"`
+}
+type GSXCOLD struct {
+	SVal string `json:"$t"`
+}
+
+type ContentB struct {
+	Tpp string `json:"type"`
+	Val string `json:"$t"`
+}
+
+// type TitleB struct {
+// 	TitleB string `json:"$t"`
+// }
 
 type ID struct {
 	t string `json:"$t"`
@@ -33,7 +57,7 @@ type Content struct {
 	tpee string `json:"$t"`
 }
 
-type Title struct {
+type T1 struct {
 	Tpe   string `json:"type"`
 	Title string `json:"$t"`
 }
@@ -82,8 +106,25 @@ func main() {
 	}
 	log.Println("============  logging the result =================")
 	log.Println(v)
-	log.Println(v.Title.Title)
-	log.Println(v.Title.Title.Title)
-	log.Println(v)
+	log.Println("============  logging the result end =================")
+	log.Println(v.Feed.Title.Title)
+	log.Println(v.Feed.Entry[1].Content.Val)
+	log.Println("====   doing entry ID ===")
+	log.Println(v.Feed.Entry[1].GSXID.SVal)
+
+	log.Println("====   doing entry title ===")
+	log.Println(v.Feed.Entry[1].TitleB.Title)
+
+	log.Println("====   doing Content Val ===")
+	log.Println(v.Feed.Entry[1].Content.Val)
+
+	log.Println("====   doing entry COLB===")
+	log.Println(v.Feed.Entry[1].GSXCOLB.SVal)
+
+	log.Println("====   doing entry COLC===")
+	log.Println(v.Feed.Entry[1].GSXCOLC.SVal)
+
+	log.Println("====   doing entry COLD===")
+	log.Println(v.Feed.Entry[1].GSXCOLD.SVal)
 
 }
