@@ -127,4 +127,14 @@ func main() {
 	log.Println("====   doing entry COLD===")
 	log.Println(v.Feed.Entry[1].GSXCOLD.SVal)
 
+	log.Println("====   the number of entries ===")
+	log.Println(len(v.Feed.Entry))
+
+	num := len(v.Feed.Entry)
+	log.Println(num)
+	for i := 0; i <= num-1; i++ {
+		log.Println(v.Feed.Entry[i].GSXID.SVal + "  =  " + v.Feed.Entry[i].GSXCOLB.SVal + "  =  " + v.Feed.Entry[i].GSXCOLC.SVal + "  =  " + v.Feed.Entry[i].GSXCOLD.SVal)
+		// log.Println(v.Feed.Entry[i].GSXID.SVal )
+	}
+
 }
