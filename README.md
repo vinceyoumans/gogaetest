@@ -29,13 +29,9 @@ Also, the first row is ignored as I think it is suppose to be a Label row
 But I cannot find the JSON part that descibed the rows.
 If anyone has a comment on that.
 
-Also...
-There are structs within structs to get to the data.
-isn't it possible to chop that down a bit?
 
 
-Next step...
-I need to determin the rows that are in entry's and print them out individually.
+
 
 
 
